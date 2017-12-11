@@ -8,7 +8,7 @@ module ActiveAdminAddons
       initializer "initialize addons" do |app|
         require_rel "support"
         require_rel "addons"
-        require_rel "active_admin_config"
+        require_rel "active_admin_config.rb"
         app.config.assets.precompile += %w(select.scss fileicons/*.png switches/switch_*.png)
       end
     end
